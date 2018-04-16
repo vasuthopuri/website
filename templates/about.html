@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %} {{ title }} {% endblock %}
+{% block body %}
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="fb-profile">
+                <img align="left" class="fb-image-lg" src="{% static 'music/image/abd.jpg' %}"
+                     alt="Profile image example"/>
+                <img align="left" class="fb-image-profile thumbnail" src="{% static 'music/image/abd2.jpg' %}"
+                     alt="Profile image example"/>
+                <div class="fb-profile-text">
+                    <h1>Vasu Thopuri</h1>
+
+                </div>
+            </div>
+        </div>
+    </div> <!-- /container fluid-->
+    <div class="container">
+        <div class="col-sm-8">
+
+            <div data-spy="scroll" class="tabbable-panel">
+                <div class="tabbable-line">
+                    <ul class="nav nav-tabs ">
+                        <li class="active">
+                            <a href="#profile_tab" data-toggle="tab">
+                                Profile </a>
+                        </li>
+                        <li>
+                            <a href="#edu_and_career_tab" data-toggle="tab">
+                                Education & Career</a>
+                        </li>
+                        <li>
+                            <a href="#tech_stack_tab" data-toggle="tab">
+                                Tech Stack</a>
+                        </li>
+                        <li>
+                            <a href="#influencers_tab" data-toggle="tab">
+                                Influencers</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="profile_tab">
+                            <p>
+                                I am vasu thopuri graduated in <b> 2017 </b> in department of Electronics and Communication Engineering
+                                with <b> 70%</b>.i am searching for a job , i have knowledge on python and django framework and Linux also.
+
+                            </p>
+                            <h5>Languages</h5>
+                            <p>
+                                Telugu&nbsp;,English&nbsp;
+                            </p>
+                            <h5>Education </h5>
+                            <p>I have done B.Tech in Electronics And Communication Engineering</p>
+                        </div>
+                        <div class="tab-pane" id="edu_and_career_tab">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <h5>Graduation</h5>
+                                        <p> B.Tech</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <h5>Intermediate(+2)</h5>
+                                        <p>Maths,Physics,Chemistry</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <h5>Schoolings</h5>
+                                        <p>SSC</p>
+                                    </div>
+
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <h5>Prakasam Engineering College</h5>
+                                        <p> Kandukur,A.P</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <h5>Sri Prathibha Jr.Collge</h5>
+                                        <p>Ongole,A.P</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <h5>Lakshmi High School</h5>
+                                        <p> Addanki,A.P</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tech_stack_tab">
+
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <h5>UI</h5>
+                                        <p> Bootstrap</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <h5>Web Frameworks</h5>
+                                        <p> Django</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <h5>Languages Known</h5>
+                                        <p> Python,C</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="influencers_tab">
+                            <div class="row">
+                                <div class="col-sm-12 ">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="img-circle influencer-logo"
+                                                     src="{% static 'music/image/hitler.jpg' %}" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Adlof Hitler</h4>
+                                            <h5>Make the lie big, make it simple, keep saying it, and eventually they will believe it.</h5>
+                                            <p>It is always more difficult to fight against faith than against knowledge.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="img-circle influencer-logo"
+                                                     src="{% static 'music/image/stalin.jpg' %}" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Josef Stalin</h4>
+                                            <h5>Death is the solution to all problems. No man - no problem.</h5>
+                                            <p>I trust no one, not even myself.</p>
+                                            <p></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="img-circle influencer-logo"
+                                                     src="{% static 'music/image/charli.jpg' %}" alt="...">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Charlie Chaplin</h4>
+                                            <h5>We think too much and feel too little.</h5>
+                                            <h5>Life could be wonderful if people would leave you alone.</h5>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-4">
+            <div class="panel panel-default">
+                <div class="menu_title">
+                    Get in touch
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+
+                            <div class="form-group ">
+                                <span>                                    <a
+                                        href=https://www.facebook.com/vasu.thopuri.7 class="fb" target="_blank">
+                                    <i class="fa fa-facebook"></i></a>
+                                </span>
+                                <span>
+                                    <a href=https://www.linkedin.com/in/vasu-thopuri-7822ab136/ class="linkedin" target="_blank">
+                                        <i class="fa fa-linkedin"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

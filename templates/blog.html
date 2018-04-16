@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %} {{ title }} {% endblock %}
+{% block body %}
+    <section id="blog">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 col-lg-offset-3 text-center">
+                    <h2><span class="ion-minus"></span>Blog Posts<span class="ion-minus"></span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus </p><br>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div id="slider" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#slider" data-slide-to="0" class="active"></li>
+                        <li data-target="#slider" data-slide-to="1"></li>
+                    </ol>
+
+
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+
+                        <div class="item active">
+                            <div class="row">
+                                {% if posts %}
+                                    {% for post in posts %}
+                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                            <div class="card text-center">
+                                                <img class="card-img-top"
+                                                     src={{ post.post_image }}
+                                                             alt="" width="100%">
+                                                <div class="card-block">
+                                                    <h4 class="card-title">{{ post.post_title }}</h4>
+                                                    <p class="card-text">{{ post.post_description|truncatechars:200 }}</p>
+                                                    <a class="btn btn-default" href="#">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endfor %}
+                                {% else %}
+
+                                {% endif %}
+
+
+                            </div> <!-- row -->
+                        </div> <!-- item -->
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+{% endblock %}

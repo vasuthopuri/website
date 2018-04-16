@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %} {{ title }} {% endblock %}
+{% block body %}
+    <div class="carousel fade-carousel slide carousel-fade" data-ride="carousel" data-interval="4000" id="bs-carousel">
+        <!-- Overlay -->
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#bs-carousel" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item slides active">
+                <div class="slide-1">
+                    <div class="overlay"></div>
+                </div>
+                <div class="hero">
+                    <h>
+                        <h1>I'm Vasu Thopuri</h1>
+                        <h3>Welcome to my Home</h3>
+                    </h>
+                </div>
+            </div>
+            <div class="item slides">
+                <div class="slide-2">
+                    <div class="overlay"></div>
+                </div>
+                <div class="hero">
+                    <h>
+                        <h1>Dreamer</h1>
+                        <h3>Haven't seen my profile yet ..?</h3>
+                    </h>
+                </div>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
+

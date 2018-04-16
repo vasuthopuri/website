@@ -1,0 +1,483 @@
+.navbar {
+    background-color: #FFFFFF;
+}
+
+.navbar-brand small {
+    font-family: MyriadLight, sans-serif;
+    font-size: 12px;
+}
+
+.body {
+    background-color: #F8F9FA;
+}
+
+a.navbar-brand {
+    font-family: MyriadRegular, sans-serif;
+    font-size: 25px;
+}
+
+.nav.navbar-nav.navbar-right {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-family: MyriadLight, sans-serif;
+}
+
+.navbar-default .navbar-nav > li > a:active {
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ff9900;
+}
+
+.footer {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.copyright {
+    background-color: #1a252f;
+}
+
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+}
+
+.fade-carousel .carousel-inner .item {
+    height: 100vh;
+}
+
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
+    opacity: .7;
+}
+
+.fade-carousel .carousel-indicators > li.active {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, .75);
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.hero h1 {
+    font-size: 6em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-family: MyriadBold, sans-serif
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+    -moz-transition: 2s all ease-in-out .1s;
+    -o-transition: 2s all ease-in-out .1s;
+    transition: 2s all ease-in-out .1s;
+}
+
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+    -moz-transition: 2s all ease-in-out .1s;
+    -o-transition: 2s all ease-in-out .1s;
+    transition: 2s all ease-in-out .1s;
+}
+
+/********************************/
+/*            Overlay           */
+/********************************/
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .7;
+}
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {
+    padding: 10px 40px;
+}
+
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+    color: #f5f5f5;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+    outline: none;
+    margin: 20px auto;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1,
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.fade-carousel .slides .slide-1 {
+    background-image: url("../image/abd2.jpg");
+}
+
+.fade-carousel .slides .slide-2 {
+    background-image: url("../image/abd.jpg");
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px) {
+    .hero {
+        width: 980px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hero h1 {
+        font-size: 4em;
+        font-family: MyriadBold, sans-serif
+    }
+}
+
+.h3, h3 {
+    font-family: MyriadRegular, sans-serif;
+    font-size: 24px;
+
+}
+
+.h1, h1 {
+    font-size: 36px;
+    font-family: MyriadRegular, sans-serif;
+}
+
+.h4, h4 {
+    font-family: MyriadRegular, sans-serif;
+}
+
+.h5, h5 {
+    font-family: MyriadRegular, sans-serif;
+}
+
+p {
+    margin: 0 0 10px;
+    font-family: MyriadLight, sans-serif;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fb-profile img.fb-image-lg {
+    z-index: 0;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 215px;
+}
+
+.fb-image-profile {
+    margin: -90px 10px 20px 80px;
+    z-index: 9;
+    width: 15%;
+}
+
+/***
+Bootstrap Line Tabs by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+***/
+
+/* Tabs panel */
+.tabbable-panel {
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+/* Default mode */
+.tabbable-line > .nav-tabs {
+    border: none;
+    margin: 0px;
+}
+
+.tabbable-line > .nav-tabs > li {
+    margin-right: 2px;
+}
+
+.tabbable-line > .nav-tabs > li > a {
+    border: 0;
+    margin-right: 0;
+    color: #737373;
+    font-family: MyriadRegular, sans-serif;
+}
+
+.tabbable-line > .nav-tabs > li > a > i {
+    color: #a6a6a6;
+}
+
+.tabbable-line > .nav-tabs > li.open, .tabbable-line > .nav-tabs > li:hover {
+    border-bottom: 4px solid #fbcdcf;
+}
+
+.tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a {
+    border: 0;
+    background: none !important;
+    color: #333333;
+}
+
+.tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i {
+    color: #a6a6a6;
+}
+
+.tabbable-line > .nav-tabs > li.open .dropdown-menu, .tabbable-line > .nav-tabs > li:hover .dropdown-menu {
+    margin-top: 0px;
+}
+
+.tabbable-line > .nav-tabs > li.active {
+    border-bottom: 4px solid #ff9900;
+    position: relative;
+}
+
+.tabbable-line > .nav-tabs > li.active > a {
+    border: 0 !important;
+    color: #333333;
+    font-family: MyriadRegular, sans-serif;
+}
+
+.tabbable-line > .nav-tabs > li.active > a > i {
+    color: #404040;
+}
+
+.tabbable-line > .tab-content {
+    margin-top: -3px;
+    background-color: #fff;
+    border: 0;
+    border-top: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.portlet .tabbable-line > .tab-content {
+    padding-bottom: 0;
+}
+
+/* Below tabs mode */
+
+.tabbable-line.tabs-below > .nav-tabs > li {
+    border-top: 4px solid transparent;
+}
+
+.tabbable-line.tabs-below > .nav-tabs > li > a {
+    margin-top: 0;
+}
+
+.tabbable-line.tabs-below > .nav-tabs > li:hover {
+    border-bottom: 0;
+    border-top: 4px solid #fbcdcf;
+}
+
+.tabbable-line.tabs-below > .nav-tabs > li.active {
+    margin-bottom: -2px;
+    border-bottom: 0;
+    border-top: 4px solid #ff9900;
+}
+
+.tabbable-line.tabs-below > .tab-content {
+    margin-top: -10px;
+    border-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.menu_title {
+    padding: 15px 10px;
+    border-bottom: 1px solid #eee;
+    margin: 0 5px;
+    font-family: MyriadRegular, sans-serif;
+}
+
+@media (max-width: 768px) {
+
+    .fb-profile-text > h1 {
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .fb-image-profile {
+        margin: -45px 10px 0 25px;
+        z-index: 9;
+        width: 20%;
+    }
+}
+
+.form-group {
+    margin-bottom: 15px;
+    font-family: MyriadRegular, sans-serif;
+}
+
+.space-between {
+    margin-left: 10px;
+}
+
+.fb {
+    font-size: 2em;
+    color: #3C569C;
+    margin-left: 10px;
+
+}
+.linkedin {
+    color: #2F7BB0;
+    font-size: 2em;
+    margin-left: 10px;
+
+}
+.phone {
+    color: #70C468;
+    font-size: 2em;
+    margin-left: 10px;
+}
+.influencer-logo {
+    height: 150px;
+    width: 150px;
+}
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,900,700,600,500,300,200,100,800);
+
+section {
+    padding: 60px 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    color: #4C4C4C;
+    word-spacing: 5px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: 'MyriadBold', sans-serif;
+}
+
+p {
+    font-size: 14px;
+}
+
+.ion-minus {
+    padding: 0px 10px;
+}
+
+#blog {
+    background-color: #f6f6f6;
+}
+
+#blog .carousel-indicators {
+    bottom: -60px;
+}
+
+#blog .carousel-indicators li {
+    background-color: #5db4c0;
+    height: 13px;
+    width: 13px;
+    margin: 5px;
+}
+
+#blog .carousel-indicators li.active {
+    background-color: #888383;
+}
+
+#blog .card-block {
+    padding: 10px;
+}
+
+#blog .card {
+    background-color: #FFF;
+    border: 1px solid #eceaea;
+    margin: 20px 0px;
+}
+
+.btn.btn-default {
+    background-color: #5db4c0;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+    padding: 13px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: MyriadSemiBold,sans-serif;
+}
+
