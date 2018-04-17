@@ -1,0 +1,6 @@
+Django==1.11.12
+gunicorn==19.7.1
+psycopg2==2.7.4
+requests==2.18.4
+whitenoise==3.3.1
+
