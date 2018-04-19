@@ -1,1 +1,1 @@
-web: gunicorn vasuthopuri.wsgi --log-file -
+web: gunicorn proyecto_www.settings.staging.wsgi --log-file -
