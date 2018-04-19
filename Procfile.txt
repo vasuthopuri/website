@@ -1,1 +1,1 @@
-web: gunicorn proyecto_www.settings.staging.wsgi --log-file -
+web: gunicorn website.wsgi --log-file -
