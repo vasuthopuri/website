@@ -24,7 +24,7 @@ SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'qvvd_w@c1@*#&bl8w4kj%a9=&x+e(#a527t!cp!u8kc6cf9esr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =False
+DEBUG =True
 
 ALLOWED_HOSTS = ["vasuthopuri.herokuapp.com"]
 
@@ -82,10 +82,10 @@ WSGI_APPLICATION = 'website.wsgi.application'
 DATABASES = {
     'default': {
          'ENGINE': 'django.db.backends.postgresql_psycopg2',
-         'NAME': 'd9j3evtum89ghg',
-         'USER':'geiweryrsejltv',
-         'PASSWORD':'7823cf2d3f2521509f0b59c94ac239708d8ca796fbe929e46075162a50084808',
-         'HOST': 'ec2-23-23-142-5.compute-1.amazonaws.com',
+         'NAME': 'gd_db',
+         'USER':'postgres',
+         'PASSWORD':'vasu143',
+         'HOST': '127.0.0.1',
          'PORT': '5432',
     }
 }
