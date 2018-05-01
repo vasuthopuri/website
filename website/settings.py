@@ -24,9 +24,9 @@ SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'qvvd_w@c1@*#&bl8w4kj%a9=&x+e(#a527t!cp!u8kc6cf9esr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =False
+DEBUG =True
 
-ALLOWED_HOSTS = ["vasuthopuri.herokuapp.com"]
+ALLOWED_HOSTS = [" vasuthopuri.herokuapp.com"]
 
 
 # Application definition
@@ -124,8 +124,7 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.0/howto/static-files/
+
 import dj_database_url
 DATABASES['default'] = dj_database_url.config()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
